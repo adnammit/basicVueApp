@@ -1,0 +1,15 @@
+.full-width {
+    width: 100%;
+}
+
+.center-content {
+    width: 50vw;
+    margin: 20px auto;
+    padding: 20px;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #aaa;
+    color: #333;
+}

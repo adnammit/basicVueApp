@@ -5,7 +5,9 @@
     "main": "index.js",
     "scripts": {
         "test": "echo \"Error: no test specified\" && exit 1",
-        "build": "webpack --config build/webpack.config.dev.js"
+        "build": "webpack --config build/webpack.config.dev.js",
+        "dev": "webpack-dev-server --config build/webpack.config.dev.js",
+        "stop": "taskkill /F /IM node.exe" 
     },
     "author": "",
     "license": "ISC",
@@ -13,11 +15,16 @@
         "vue": "^2.5.22"
     },
     "devDependencies": {
+        "@babel/core": "^7.2.2",
+        "@babel/preset-env": "^7.3.1",
+        "babel-loader": "^8.0.5",
         "css-loader": "^2.1.0",
+        "html-webpack-plugin": "^3.2.0",
         "vue-loader": "^15.6.0",
         "vue-style-loader": "^4.1.2",
         "vue-template-compiler": "^2.5.22",
         "webpack": "^4.29.0",
-        "webpack-cli": "^3.2.1"
+        "webpack-cli": "^3.2.1",
+        "webpack-dev-server": "^3.1.14"
     }
 }
